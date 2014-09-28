@@ -30,6 +30,11 @@ public class Imshow {
 	private Boolean SizeCustom;
 	private int Height, Width;
 	private boolean breaksign;
+	private String filename = "maldives.jpg";
+	
+	public String getfile(){
+		return filename;
+	}
 
 	public Imshow(String title,VideoCapture vcam) {
 		breaksign = false;
@@ -48,6 +53,33 @@ public class Imshow {
 				// TODO Auto-generated method stub
 				if(e.getKeyCode() == KeyEvent.VK_C){
 					breaksign = true;
+				}
+				if(e.getKeyCode() == KeyEvent.VK_1){
+					filename = "maldives.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_2){
+					filename = "captain-amarica.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_3){
+					filename = "cornell.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_4){
+					filename = "desert.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_5){
+					filename = "fizz.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_6){
+					filename = "flowers.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_7){
+					filename = "lego-street.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_8){
+					filename = "super-mario.jpg";
+				}
+				if(e.getKeyCode() == KeyEvent.VK_9){
+					filename = "minecraft.png";
 				}
 			}
 
